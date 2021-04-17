@@ -114,7 +114,7 @@ string Table::printWinners(vector<int> winnerList){
     writer << "Number of Winners: " << winnerList.size() << endl;
     for (int i = 0; i < winnerList.size(); i++){
         int winMoney = pot / winnerList.size();
-        writer << "Congrats player " << players[winnerList[i]]->Name() << " got " << statusName[players[i]->HandStatus()] << ", win " << winMoney << "\n";
+        writer << "Congrats player " << players[winnerList[i]]->Name() << " got " << statusName[players[winnerList[i]]->HandStatus()] << ", win " << winMoney << "\n";
     }
     return writer.str();
 }
